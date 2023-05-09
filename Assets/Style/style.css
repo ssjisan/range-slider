@@ -1,0 +1,185 @@
+.body {
+  background-color: #f6fdff;
+}
+.gap {
+  margin-top: 64px;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  color: #393e50;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.slider-section {
+  max-width: 100%;
+  width: 736px;
+  margin: auto;
+}
+.slider-section p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #393e50;
+}
+/******************************* Range Slider Start *******************************/
+
+.progres-bar input[type="range"] {
+  width: 100%;
+  margin-bottom: 64px;
+}
+.my-range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #eee;
+  border-radius: 100px;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  margin: 20px 0px;
+}
+
+.my-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border-radius: 50%;
+  border: 5px solid #30a7d7;
+  margin-top: -7px;
+  cursor: pointer;
+}
+.my-range::-webkit-slider-runnable-track {
+  background: #ace2f8;
+  border-radius: 4px;
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+}
+/******************************* Range Slider End *******************************/
+/* .card-section {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+} */
+.price-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #cff1ff;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  transition: 1s;
+}
+.package-name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #393e50;
+}
+.package-price {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 140%;
+  width: 100%;
+  color: #393e50;
+  opacity: 0.4;
+}
+.package-duration {
+  font-size: 24px;
+}
+.extra-features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  background: rgba(57, 62, 80, 0.05);
+  border-radius: 10px;
+}
+.extra-features p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #393e50;
+  margin: unset;
+}
+.other-features {
+  width: 100%;
+}
+.other-features p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #393e50;
+  opacity: 0.8;
+}
+.points {
+  width: 100%;
+  height: 218px;
+}
+.points ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.points ul > li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  color: #393e50;
+}
+.card-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 110px;
+  width: 100%;
+  background: rgba(57, 62, 80, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(57, 62, 80, 0.1);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  color: rgba(57, 62, 80, 0.4);
+}
+.active-price-card {
+  box-shadow: 0px 25px 32px rgba(48, 167, 215, 0.08);
+  border: 1px solid transparent;
+  transition: 1s;
+  transform: scale(1.05);
+}
+.active-price-card > .package-price {
+  transition: 0.5s;
+  color: #393e50;
+  opacity: 1;
+}
+.active-price-card > .extra-features {
+  transition: 0.5s;
+  background: rgba(48, 167, 215, 0.05);
+}
+.active-price-card > .card-button {
+  transition: 0.5s;
+  background: #30a7d7;
+  border: 1px solid #30a7d7;
+  color: #fff;
+}
